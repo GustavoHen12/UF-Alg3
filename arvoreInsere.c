@@ -68,11 +68,13 @@ int main()
     arv2 = malloc(sizeof(no));
     arv2->esq = NULL;
     arv2->dir = NULL;
+    arv2->chave = 40;
     no *found;
     for(int i = 0; i < 10; i++)
         buscaBinaria(arv2, rand()%100, found);
     printTree(arv2);
     printf("\n");
+
     return 0;
 }
 
